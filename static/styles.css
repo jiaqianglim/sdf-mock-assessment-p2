@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+  }
+
+.col-4{
+  padding: 15px;
+  width: 33.33vw;
+  float: left;
+  height:100vh;
+}
+.col::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row-pad{
+  padding:15px;
+  height: 20vh;
+}
+
+.row-content{
+  padding:15px;
+  height: 60vh;
+}
+
+.row-pad::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div{
+  text-align: center;
+}

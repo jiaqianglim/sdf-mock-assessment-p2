@@ -23,7 +23,7 @@ public class App
         Socket s = new Socket("localhost", 3000);
         try(InputStream is = s.getInputStream();
             OutputStream os = s.getOutputStream();){
-                String message = "GET /index.html HTTP/1.1\n";
+                String message = "GET /index.html HTTP/1.1\r\n";
                 PrintStream ps = new PrintStream(os);
                 ps.print(message);
                 ps.flush();
